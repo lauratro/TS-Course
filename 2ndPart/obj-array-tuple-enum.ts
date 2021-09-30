@@ -1,4 +1,4 @@
-function add(n1:number,n2:number, showResult: boolean, phrase:string){
+function add1(n1:number,n2:number, showResult: boolean, phrase:string){
     // if(typeof n1 !== "number"){
     //     throw new Error("it has to be a number")
     // }
@@ -15,7 +15,7 @@ const number1 = 5;
 const number2 =7.8;
 const printResult= true
 const resultPhrase ="The result is..."
-add(number1, number2, printResult, resultPhrase)
+add1(number1, number2, printResult, resultPhrase)
 // Ts and Arrays
 const person:{
     name:string;
