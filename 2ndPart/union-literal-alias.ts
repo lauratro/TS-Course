@@ -20,9 +20,9 @@ function combine(n1: Combinale, n2: Combinale, resultConversion: ConversionDescr
    return result;
     
 }
-const combineAges = combine(30, 26, " as-number");
+const combineAges = combine(30, 26, "as-number");
 console.log(combineAges)
-const combineStringAges = combine('30', '26', " as-number");
+const combineStringAges = combine('30', '26', "as-number");
 console.log(combineStringAges)
-const combineNames = combine('Terry', 'Mary', 'as-age');
+const combineNames = combine('Terry', 'Mary', 'as-text');
 console.log(combineNames)
