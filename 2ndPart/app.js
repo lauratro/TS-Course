@@ -1,8 +1,13 @@
-//Functions and their return Type
-function add(n1, n2) {
-    return n1 + n2;
+var userInput; //we can store any values without getting errors
+var userName;
+userInput = 5;
+userInput = "Max;";
+userName = userInput; //I get error because unknown is more restrictive than any
+if (typeof userInput === "string") {
+    userName = userInput; //I need an extra type check to be able to assign userInput to userName
 }
-function printResult(num) {
-    console.log('Result:' + num);
+//NEVER TYPE
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-printResult(add(5, 12));
+generateError("there is an Error", 500);
